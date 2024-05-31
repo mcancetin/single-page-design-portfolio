@@ -17,13 +17,13 @@
   &__skills {
     display: grid;
     gap: 2.4rem;
-    grid-template-rows: repeat(2, 18.2rem);
+    grid-template-rows: repeat(2, 17rem);
     grid-template-areas:
       "graphic-design ui-ux apps photography"
       "graphic-design illustrations illustrations motion-graphics";
 
     @include respond(max-width, 64rem) {
-      grid-template-rows: repeat(3, 18.2rem);
+      grid-template-rows: repeat(3, 17rem);
       grid-template-areas:
         "graphic-design graphic-design ui-ux apps"
         "graphic-design graphic-design illustrations illustrations"
@@ -31,7 +31,7 @@
     }
 
     @include respond(max-width, 35rem) {
-      grid-template-rows: 36.4rem repeat(4, 18.2rem);
+      grid-template-rows: 36.4rem repeat(4, 17rem);
       grid-template-areas:
         "graphic-design graphic-design"
         "ui-ux apps"
@@ -90,6 +90,10 @@
       max-width: 36.4rem;
       position: absolute;
     }
+
+    @include respond(max-width, 64rem) {
+      position: initial;
+    }
   }
 
   &__content {
@@ -97,6 +101,11 @@
     @include respond(max-width, 64rem) {
       margin-left: auto;
       max-width: 50ch;
+    }
+
+    @include respond(max-width, 35rem) {
+      max-width: 100%;
+      text-align: center;
     }
   }
 
