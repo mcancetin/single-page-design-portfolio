@@ -1,0 +1,17 @@
+// Abstracts
+@import "scss/abstracts/mixins", "scss/abstracts/variables",
+  "scss/abstracts/utilities";
+
+// Base
+@import "scss/base/reset", "scss/base/base", "scss/base/typography";
+
+// Components
+@import "/scss/components/button", "/scss/components/skill-card",
+  "/scss/components/slider";
+
+// Layout
+@import "scss/layout/container", "scss/layout/footer", "scss/layout/header",
+  "scss/layout/wrapper";
+
+// Pages
+@import "scss/pages/home";

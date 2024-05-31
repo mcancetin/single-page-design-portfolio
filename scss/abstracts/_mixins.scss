@@ -1,0 +1,18 @@
+// Mixinler
+@mixin heading($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $fw-bold;
+}
+
+@mixin body($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $fw-regular;
+}
+
+@mixin respond($type, $breakpoint) {
+  @media ($type: $breakpoint) {
+    @content;
+  }
+}

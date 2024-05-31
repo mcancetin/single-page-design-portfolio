@@ -1,0 +1,18 @@
+.heading-large {
+  $font-size: clamp($fs-650, 1.635rem + 0.9821vw, $fs-700);
+  @include heading($font-size, $lh-700);
+}
+
+.heading-medium {
+  $font-size: clamp($fs-450, 1.635rem + 0.9821vw, $fs-600);
+  @include heading($font-size, $lh-600);
+}
+
+.heading-small {
+  $font-size: clamp($fs-450, 1.635rem + 0.9821vw, $fs-500);
+  @include heading($fs-500, $lh-500);
+}
+
+.body-text {
+  @include body($fs-400, $lh-400);
+}

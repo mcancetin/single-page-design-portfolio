@@ -1,0 +1,17 @@
+.skill-card {
+  border-radius: 0.8rem;
+  padding: 2.4rem;
+  display: grid;
+
+  & > img {
+    justify-self: end;
+  }
+
+  & > h4 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 3rem;
+    font-size: 2.4rem;
+    align-self: end;
+  }
+}

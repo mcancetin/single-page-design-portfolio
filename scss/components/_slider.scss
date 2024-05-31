@@ -1,0 +1,28 @@
+.slider {
+  margin-bottom: 8.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5.6rem;
+
+  &__container {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    overflow-x: hidden;
+
+    &:hover {
+      overflow-x: scroll;
+    }
+  }
+
+  &__container > img {
+    border-radius: 0.8rem;
+  }
+
+  &__button-group {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}
