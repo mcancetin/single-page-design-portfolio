@@ -1,6 +1,5 @@
 // Mixinler
-@mixin heading($font-size, $line-height) {
-  font-size: $font-size;
+@mixin heading($line-height) {
   line-height: $line-height;
   font-weight: $fw-bold;
 }
@@ -9,6 +8,10 @@
   font-size: $font-size;
   line-height: $line-height;
   font-weight: $fw-regular;
+}
+
+@mixin fontsize-clamp-mixin($min, $max) {
+  font-size: fontsize-clamp($min, $max);
 }
 
 @mixin respond($type, $breakpoint) {
